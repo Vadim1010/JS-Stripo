@@ -1,0 +1,10 @@
+<div class="home row">
+  <div class="col-xs-6 col-md-3 home__item"
+       *ngFor="let item of data$ | async">
+    <div class="thumbnail">
+      <h3 class="item__title"
+      (click)="showDetail(item.id)">{{item.name}}</h3>
+      <p class="item__date"> {{item.modified | date}}</p>
+    </div>
+  </div>
+</div>

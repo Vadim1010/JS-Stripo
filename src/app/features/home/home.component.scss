@@ -1,0 +1,18 @@
+@import '~styles/main';
+
+.home {
+  &__item {
+    .item {
+      &__title {
+        cursor: pointer;
+        text-align: center;
+        &:hover {
+          color: #0275d8;
+        }
+      }
+      &__date {
+        text-align: right;
+      }
+    }
+  }
+}

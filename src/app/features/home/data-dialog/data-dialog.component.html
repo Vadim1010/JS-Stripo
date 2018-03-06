@@ -1,0 +1,16 @@
+<h2 mat-dialog-title>Change data</h2>
+  <label>
+    Value:
+    <input type="text" matInput [(ngModel)]="valueItem">
+  </label>
+  <label>
+    Font-size:
+    <input type="text" matInput [(ngModel)]="fontSizeItem">
+  </label>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button
+          [mat-dialog-close]="{value: valueItem, size: fontSizeItem}"
+          cdkFocusInitial
+           >Ok</button>
+</div>

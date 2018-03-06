@@ -1,0 +1,7 @@
+<div *ngIf="dataItem" class="data-detail">
+  <h1 class="data-detail__title">{{dataItem.name}}</h1>
+  <p class="data-detail__date">{{dataItem.modified | date}}</p>
+  <div [innerHtml]="dataItem.template"
+       (click)="showDialog($event)"
+       class="data-detail__template"></div>
+</div>

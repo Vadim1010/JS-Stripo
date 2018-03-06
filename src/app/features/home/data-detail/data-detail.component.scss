@@ -1,0 +1,24 @@
+@import '~styles/main';
+
+.data-detail {
+  &__title {
+    text-align: center;
+  }
+  &__date {
+    text-align: right;
+  }
+  &__template {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    overflow: hidden;
+    .container {
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+    }
+    .editable {
+      border: 1px solid red;
+      max-width: 100%;
+    }
+  }
+}
